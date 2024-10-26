@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "module github.com/RonexLemon/Transfer";
+
+service TransferService{
+    rpc Transfer(TransferRequest) returns (TransferResponse) {}
+}
+
+message TransferRequest{
+    string from = 1;
+    string to = 2;
+    string amount = 3;
+}
+
+message TransferResponse{
+    string hash = 1;
+}
