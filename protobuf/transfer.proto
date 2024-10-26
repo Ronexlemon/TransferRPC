@@ -10,6 +10,7 @@ message TransferRequest{
     string from = 1;
     string to = 2;
     string amount = 3;
+    string blocktimeStamp=4;
 }
 
 message TransferResponse{
